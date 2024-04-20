@@ -1,0 +1,97 @@
+.container {
+    max-width: 607px;
+    width: 90%;
+    margin: auto;
+    margin-top: 75px;
+    background: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+}
+
+.top-bar input {
+    flex: 1;
+    max-width: 70%;
+    height: 50px;
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    color: #626262;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp,
+.weather-location {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.data-container {
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar input {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .top-bar input {
+        max-width: 50%;
+    }
+
+    .weather-temp,
+    .weather-location {
+        font-size: 28px;
+    }
+}
